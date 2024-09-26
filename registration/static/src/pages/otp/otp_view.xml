@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xml:space="preserve">
+    <t t-name="registration.Otp">
+        
+
+        <div class="otp-container row" >
+
+
+
+
+
+            <div class="col p-0 register-background">
+                <img t-att-src="'/registration/static/img/Register.png'" alt="Register" class="img-fluid"/>
+            </div>
+
+
+            <div class=" otp-form">
+                    <img t-att-src="'/registration/static/img/Logo.svg'" alt="Logo" class=""/>
+    
+                <h2 class="title">OTP Verification Code</h2>
+    
+                <p>We have sent the code to <t t-esc="props.whatsappNumber"/> via Whatsapp</p>
+    
+                <div class="row" t-ref="otpInput">
+                    <div class="col-1 otp-input">
+                        <input type="text" t-att-inputmode="numeric" t-att-maxlength="1" class="form-control"/>
+                    </div>
+                    <div class="col-1 otp-input">
+                        <input type="text" t-att-inputmode="numeric" t-att-maxlength="1" class="form-control"/>
+                    </div>
+                    <div class="col-1 otp-input">
+                        <input type="text" t-att-inputmode="numeric" t-att-maxlength="1" class="form-control"/>
+                    </div>
+                    <div class="col-1 dash">
+                        <span>-</span>
+                    </div>
+                    <div class="col-1 otp-input">
+                        <input type="text" t-att-inputmode="numeric" t-att-maxlength="1" class="form-control"/>
+                    </div>
+                    <div class="col-1 otp-input">
+                        <input type="text" t-att-inputmode="numeric" t-att-maxlength="1" class="form-control"/>
+                    </div>
+                    <div class="col-1 otp-input">
+                        <input type="text" t-att-inputmode="numeric" t-att-maxlength="1" class="form-control"/>
+                    </div>
+                </div>
+    
+                <p style="margin-top: 10px; margin-bottom: 24px;">Didn't receive the code? <a href="#">Resend
+            code</a></p>
+                <button type="submit" class="btn btn-warning">Submit</button>
+            </div>
+
+        </div>
+    </t>
+</template>
